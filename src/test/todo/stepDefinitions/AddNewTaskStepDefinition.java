@@ -13,9 +13,9 @@ import okhttp3.Request;
 import okhttp3.RequestBody;
 import okhttp3.Response;
 
-public class StepDefinition {
+public class AddNewTaskStepDefinition {
 	
-	private static final Logger logger = Logger.getLogger(StepDefinition.class);
+	private static final Logger logger = Logger.getLogger(AddNewTaskStepDefinition.class);
 	
 	//similar format to RESTclient with http, header, method, body
 	String host = "http://localhost:8080/To-do";
