@@ -10,8 +10,8 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(
 		// folder location for all .features files
 		features = "classpath:test/todo/features"
-		,glue={"classpath:test/stepDefinitions"}
-		,monochrome = false
+		,glue={"classpath:test/todo/stepDefinitions"}
+		,monochrome=true
 		)
 public class TestRunner {
 
