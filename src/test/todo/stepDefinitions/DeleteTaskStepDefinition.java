@@ -32,8 +32,8 @@ public class DeleteTaskStepDefinition {
 		logger.info("user select task to delete");
 	}
 
-	@When("^User Click on Confirmation Button$")
-	public void user_Click_on_Confirmation_Button() throws Throwable {
+	@When("^User Click on Delete Button$")
+	public void user_Click_on_Delete_Button() throws Throwable {
 		request = new Request.Builder()
 			      .url(url)
 			      .delete(requestBody)

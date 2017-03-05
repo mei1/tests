@@ -27,12 +27,12 @@ public class UpdateTaskStepDefinition {
 	@When("^User Click Existing Task by Task Id$")
 	public void user_Click_Existing_Task_by_Task_Id() throws Throwable {
 		url = host + "/updatetask";
-		logger.info("user click new task button");
+		logger.info("user click update task button");
 	}
 
 	@When("^User Edits Task Details$")
 	public void user_Edits_Task_Details() throws Throwable {
-		body = "{\"task\":{\"taskGroup\":{\"taskGroupId\": 1}},\"taskTitle\":\"dinner meeting\",\"taskContent\":\"dinner meeting at city hall\"}";
+		body =  "{\"taskGroup\":{\"taskGroupId\": 2},\"columnName\":\"taskTitle\",\"columnValue\":\"dinner meeting\"}";
 		requestBody = RequestBody.create(header, body);
 		logger.info("user select task to update");
 	}
