@@ -30,12 +30,12 @@ public class AddNewTaskStepDefinition {
 	
 	@Given("^User is on Home Page$")
 	public void user_is_on_Home_Page() throws Throwable {
-		url = host + "/inserttaskdata";
 		logger.info("user is on home page");
 	}
 
 	@When("^User Click New Task Button$")
 	public void user_Click_New_Task_Button() throws Throwable {
+		url = host + "/inserttaskdata";
 		logger.info("user click new task button");
 	}
 
